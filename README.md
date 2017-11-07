@@ -11,10 +11,10 @@ Syntax hilighting and some snippets.
 
 ## Installation
 
-Download the `.vsix` file from Releases, and run 
+Simply use the VSCode "install extensions" command and search for `delta`.
+
+Alternatively, you can download the `.vsix` file from Releases, and run 
 
 ```
 code --install-extension path/to/file.vsix
 ```
-
-VSCode marketplace downloadable coming soon.
