@@ -74,7 +74,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(class|deinit|enum|func|import|init|undefined|let|struct|typealias|var|break|case|continue|do|else|if|in|for|return|switch|while|mutating|mutable|null)\b</string>
+			<string>\b(class|deinit|enum|def|import|init|undefined|let|struct|typealias|var|break|case|continue|do|else|if|in|for|return|switch|while|mutating|mutable|null)\b</string>
 			<key>name</key>
 			<string>keyword.reserved.delta</string>
 		</dict>
