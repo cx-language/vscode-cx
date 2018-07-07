@@ -5,9 +5,9 @@
 		"description": "",
 		"scope": "source.delta"
 	},
-	"func": {
-		"prefix": "func",
-		"body": "\nfunc ${1:name}(${2:arguments}) -> ${3:ReturnType} {\n\t$4\n}\n",
+	"def": {
+		"prefix": "def",
+		"body": "\ndef ${1:name}(${2:arguments}): ${3:ReturnType} {\n\t$4\n}\n",
 		"description": "",
 		"scope": "source.delta"
 	},
