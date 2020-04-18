@@ -1,30 +1,41 @@
 {
-    "name": "delta-language",
-    "displayName": "Delta Language",
-    "description": "Support for the Delta language",
-    "version": "0.0.1",
-    "publisher": "coolnesss",
-    "engines": {
-        "vscode": "^1.17.0"
-    },
-    "categories": [
-        "Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "delta",
-            "aliases": ["Delta", "delta"],
-            "extensions": [".delta"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "delta",
-            "scopeName": "source.delta",
-            "path": "./syntaxes/delta.tmLanguage"
-        }],
-        "snippets": [{
-            "language": "delta",
-            "path": "./snippets/snippets.json"
-        }]
-    }
+	"name": "delta-language",
+	"displayName": "Delta Language",
+	"description": "Support for the Delta language",
+	"version": "0.0.1",
+	"publisher": "delta-lang",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "delta",
+				"aliases": [
+					"Delta",
+					"delta"
+				],
+				"extensions": [
+					".delta"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "delta",
+				"scopeName": "source.delta",
+				"path": "./syntaxes/delta.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "delta",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
 }

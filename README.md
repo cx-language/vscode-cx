@@ -1,6 +1,6 @@
 # delta-language
 
-VSCode language support for [delta-lang](https://delta-lang.github.io). Based on [Swift-VS-Code](https://github.com/kasik96/Swift-VS-Code).
+VSCode language support for [delta-lang](https://delta-lang.github.io).
 
 * v0.0.1
     Alpha release.

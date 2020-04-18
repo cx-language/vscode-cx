@@ -1,0 +1,84 @@
+{
+  "fileTypes": ["delta"],
+  "name": "Delta",
+  "patterns": [
+    {
+      "begin": "/\\*",
+      "end": "\\*/",
+      "name": "comment.block.delta"
+    },
+    {
+      "begin": "//",
+      "end": "$\\n?",
+      "name": "comment.line.delta"
+    },
+    {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.delta",
+      "patterns": [
+        {
+          "begin": "\\\\\\(",
+          "end": "\\)",
+          "name": "string-interpolation",
+          "captures": {
+            "0": {
+              "name": "keyword.operator.delta"
+            }
+          },
+          "patterns": [
+            {
+              "match": "\\+",
+              "name": "keyword.operator.delta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "match": ",",
+      "name": "comment.punctuation.comma.delta"
+    },
+    {
+      "match": "\\b[A-Z][A-Za-z]+\\b",
+      "name": "support.type.delta"
+    },
+    {
+      "match": "\\b(addressof|as|break|case|continue|default|defer|else|enum|extern|for|if|import|in|interface|private|return|sizeof|struct|switch|this|while|([#]+if|else|endif))\\b",
+      "name": "keyword.reserved.delta"
+    },
+    {
+      "match": "\\b(true|false)\\b",
+      "name": "constant.numeric.delta"
+    },
+    {
+      "match": "\\b(const|var|null|undefined|void|char|bool|int|int8|int16|int32|int64|uint|uint8|uint16|uint32|uint64|float|float32|float64\")\\b",
+      "name": "constant.character.delta"
+    },
+    {
+      "match": "(-|\\.)?\\b[0-9]+(\\.[0-9]+)?\\b",
+      "name": "constant.numeric.delta"
+    },
+    {
+      "match": "\\+|-|\\*|/|%|=|!|\\^|~|\\||\\?|<|>|&",
+      "name": "keyword.operator.delta"
+    },
+    {
+      "match": "\\w+(?=\\s*:)",
+      "name": "meta.tag.delta"
+    },
+    {
+      "match": "\\w+(?=\\s*\\()",
+      "name": "support.function.delta"
+    },
+    {
+      "name": "support.type.delta",
+      "match": "(\\w+)(?=\\s\\w+\\s\\=)"
+    },
+    {
+      "name": "support.type.delta",
+      "match": "(?:\\w+[*]*)(?:\\s)(?=[^=\\s])"
+    }
+  ],
+  "scopeName": "source.delta"
+}
