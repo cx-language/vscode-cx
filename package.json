@@ -10,6 +10,9 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"repository": {
+		"url": "https://github.com/delta-lang/delta-vscode"
+	},
 	"contributes": {
 		"languages": [
 			{

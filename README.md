@@ -1,13 +1,14 @@
-# delta-language
+# Delta Programming Language
 
 VSCode language support for [delta-lang](https://delta-lang.github.io).
 
-* v0.0.1
-    Alpha release.
+<p align="center">
+  <img src="./assets/demo.png">
+</p>
 
 ## Features
 
-Syntax hilighting and some snippets. 
+Syntax highlighting and some snippets. 
 
 ## Installation
 
